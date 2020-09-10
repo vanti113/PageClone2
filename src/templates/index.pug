@@ -1,0 +1,102 @@
+extends layouts/layout
+
+block content 
+  main  
+    section.part1
+      .image_title
+        .title_banner 
+          span LABOR DAY SALE
+        p Nail your look with our ultra-vibrant polish collection, perfect for DIY manicures and low-key nail art.
+        button shop now
+    section.part2
+      .image_title  
+      .image_title2
+        .title_banner
+          span  OUR STUDIOS
+        p Back in action: book our Soho flagship studio or our new Uptown studio.
+        button book a manicure
+    section.part3
+      .prod_title
+        span THE SHOP
+        h2 Our Newest Polish Colors
+      .prod_images
+        .pictures
+          img(src="/image/p1.png", alt="product1")
+          img(src="/image/p2.png", alt="product2")
+          img(src="/image/p3.png", alt="product3")
+          .details_box
+            span.title  POWER COUPLE
+            h2 Like Lilac + Like Muse
+            span.detail VIEW DETAILS
+            button ADD TO CART
+          .details_box
+            span.title  POWER COUPLE
+            h2 Like Lush + Like Flora
+            span.detail VIEW DETAILS
+            button ADD TO CART
+          .details_box
+            span.title  POWER COUPLE
+            h2 Like Rain + Like Brush
+            span.detail VIEW DETAILS
+            button ADD TO CART
+    section.part4
+      .image_title
+        .title_banner
+          span GIFT CARD  
+          p Give the gift of the Paintbox Experience for a manicure that tells a story. 
+          button GET GIFTING
+    section.part5 
+      .image_title
+        span NEWEST POWER COUPLE
+        h2 Summer 2020 Power Couple: Like Lilac + Like Muse
+        .product_images
+          - var i = 0
+          while i < 8  
+            img(src="/image/p4.png", alt="manicure")
+            - i++
+        button NEW AND NOW
+    section.part6.banners
+      img(src="image/4.jpeg", alt="banner4")
+      .banner
+        span.first Sep 5, 2020
+        p Nails of New York: Indre Rockefeller
+        .banner_footer
+          span READ STORY
+          i.fas.fa-chevron-right
+    section.part7.banners
+      .banner
+        span.first Sep 2, 2020
+        p Nails of New York: Welcome Back!
+        .banner_footer
+          span READ STORY
+          i.fas.fa-chevron-right
+      img(src="image/5.jpeg", alt="banner5")    
+    section.part8.banners  
+      img(src="image/6.jpeg", alt="banner6")
+      .banner
+        span.first Sep 5, 2020
+        p Nails of New York: Antonia Cheri
+        .banner_footer
+          span READ STORY
+          i.fas.fa-chevron-right
+    section.part9 
+      span  JOIN OUR CONVERSATION
+      p Be the first to hear about new launches and enjoy 10% off your first polish order.
+      form(action="")
+        input(type="text", name="", placeholder="Enter your email")
+        .form_right
+          button
+            i.fas.fa-chevron-right
+    section.part10
+      .image_grid
+        img(src="image/p5.png", alt="")
+        img(src="image/p6.png", alt="")
+        img(src="image/p7.png", alt="")
+        img(src="image/p8.png", alt="")
+        img(src="image/p6.png", alt="")
+        img(src="image/p7.png", alt="")
+        img(src="image/p8.png", alt="")
+        img(src="image/p5.png", alt="")
+    .email
+      span.first Follow us at
+      span.last @paintboxnails

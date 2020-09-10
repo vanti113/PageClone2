@@ -1,0 +1,39 @@
+@mixin title-banner {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@mixin p-font {
+  color: $font-color;
+  font-style: normal;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  word-spacing: 0.2rem;
+}
+@mixin button-hover {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  background-color: inherit;
+  border: 0.5px solid black;
+  transition: all 0.2s;
+  outline: none;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin fonts {
+  font-family: "Noto Serif JP", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
